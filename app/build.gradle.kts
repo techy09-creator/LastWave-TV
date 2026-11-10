@@ -323,7 +323,7 @@ dependencies {
     implementation("org.jellyfin.media3:media3-ffmpeg-decoder:1.2.1+1")
 
     // NIO also backports NewPipe's URL encoder/decoder overloads below API 33.
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs_nio:2.0.4")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs_nio:2.1.5")
 
     // Low-latency native output. Version 1.10 remains API-compatible with the
     // requested Oboe 1.8+ baseline and exposes its CMake target through Prefab.
