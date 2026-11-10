@@ -30,7 +30,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          rsync -a --delete --exclude='.git' upstream/ destination/
+          rsync -a --delete --exclude='.git' --exclude='.github/workflows/' upstream/ destination/
           cd destination
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
