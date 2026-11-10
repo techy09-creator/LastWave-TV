@@ -15,12 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout destination
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: destination
           fetch-depth: 0
       - name: Checkout public upstream
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: techy09-creator/LastWave-Native
           ref: main
